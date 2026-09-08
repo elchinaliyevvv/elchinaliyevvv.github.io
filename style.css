@@ -430,6 +430,13 @@ a{
 
 
     @media (max-width: 900px) {
+      .about-text {
+      font-size: clamp(0.1rem, 3vw, 1.9rem);
+      font-weight: 600; line-height: 1.55;
+      
+      
+    }
+   
       nav { padding: 1.25rem 1.5rem; }
       .nav-links { gap: 1.5rem; }
       #hero { grid-template-columns: 1fr; padding: 0; }
@@ -450,7 +457,42 @@ a{
       footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
     }
     @media (max-width: 600px) {
+       
       .nav-links { display: none; }
       .hero-name { font-size: clamp(2.8rem, 14vw, 5rem); }
     }
-  
+  @media (min-width: 319px) and (max-width: 450px) {
+      .about-text {
+      font-size: clamp(0.1rem, 3vw, 1.9rem);
+      font-weight: 600; line-height: 1.55;
+      
+      
+    }
+     .hero-img-label {
+        position: absolute; bottom: 17rem; left: 0; right: 0;
+      text-align: center; z-index: 2;
+      font-family: var(--font-mono); font-size: 1rem;
+      color: rgba(136, 255, 0, 0.4); letter-spacing: 0.1em;
+      text-transform: uppercase;
+     
+       
+    }
+  }
+  @media (min-width: 750px) and (max-width: 1024px) {
+      .about-text {
+       
+      font-weight: 600; line-height: 1.55;
+      
+       letter-spacing: -0.01em;
+    }
+        
+      
+     
+     .hero-img-label {
+       bottom: 2rem;  
+      
+        font-size: 1rem;
+     
+       
+    }
+  }
